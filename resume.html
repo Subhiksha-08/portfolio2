@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Subhiksha S S</title>
+  <meta name="description" content="Official Resume of Subhiksha S S - Electronics and Communication Engineering Student." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Specific Resume Document Styles */
+    .resume-wrapper {
+      max-width: 900px;
+      margin: 100px auto 60px;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .resume-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .resume-paper {
+      background: #0f172a;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      padding: 48px;
+      color: #f8fafc;
+    }
+
+    .resume-header {
+      text-align: center;
+      border-bottom: 2px solid rgba(56, 189, 248, 0.3);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+
+    .resume-name {
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #38bdf8;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .resume-contact-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 13.5px;
+      color: #94a3b8;
+    }
+
+    .resume-contact-bar a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .resume-contact-bar a:hover {
+      color: #7dd3fc;
+      text-decoration: underline;
+    }
+
+    .resume-sec-title {
+      font-family: var(--font-heading);
+      font-size: 16px;
+      font-weight: 800;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 6px;
+      margin: 28px 0 16px;
+    }
+
+    .resume-sec-title:first-of-type {
+      margin-top: 0;
+    }
+
+    .resume-p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #cbd5e1;
+    }
+
+    .resume-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .resume-item-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #f8fafc;
+    }
+
+    .resume-item-date {
+      font-size: 13px;
+      font-weight: 600;
+      color: #38bdf8;
+    }
+
+    .resume-item-sub {
+      font-size: 13.5px;
+      font-style: italic;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+
+    .resume-bullets {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 8px 0 16px;
+    }
+
+    .resume-bullets li {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      line-height: 1.65;
+      margin-bottom: 6px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px 16px;
+      font-size: 13.5px;
+    }
+
+    .skills-label {
+      font-weight: 700;
+      color: #38bdf8;
+    }
+
+    .skills-val {
+      color: #cbd5e1;
+    }
+
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .top-nav, .resume-toolbar, .ambient-bg {
+        display: none !important;
+      }
+      .resume-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+      .resume-paper {
+        background: #ffffff !important;
+        color: #000000 !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+      }
+      .resume-name, .resume-sec-title, .resume-item-date, .skills-label {
+        color: #000000 !important;
+      }
+      .resume-p, .resume-item-sub, .resume-bullets li, .skills-val, .resume-contact-bar {
+        color: #222222 !important;
+      }
+      .resume-header, .resume-sec-title {
+        border-color: #000000 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Ambient Grid Background -->
+  <div class="ambient-bg"></div>
+
+  <!-- Top Navigation Bar -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">SS</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html#about">About</a>
+        <a href="portfolio.html#skills">Skills</a>
+        <a href="portfolio.html#projects">Projects</a>
+        <a href="portfolio.html#experience">Experience</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="https://www.linkedin.com/in/subhiksha-senthil-kumar-1a9770356/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Subhiksha-08" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="resume-wrapper">
+    <!-- Toolbar Actions -->
+    <div class="resume-toolbar">
+      <a href="index.html" class="btn btn-secondary">
+        <svg class="icon" viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Back to Home</span>
+      </a>
+      <button onclick="window.print()" class="btn btn-primary">
+        <svg class="icon" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        <span>Print / Download Resume PDF</span>
+      </button>
+    </div>
+
+    <!-- Official Resume Document Paper -->
+    <article class="resume-paper">
+      
+      <!-- Header -->
+      <header class="resume-header">
+        <h1 class="resume-name">SUBHIKSHA S S</h1>
+        <div class="resume-contact-bar">
+          <span>📞 +91 6380797851</span>
+          <span>|</span>
+          <a href="mailto:subhisenthilkumar73@gmail.com">✉ Email</a>
+          <span>|</span>
+          <a href="https://github.com/Subhiksha-08" target="_blank" rel="noopener">GitHub</a>
+          <span>|</span>
+          <a href="https://www.linkedin.com/in/subhiksha-senthil-kumar-1a9770356/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </header>
+
+      <!-- Summary -->
+      <section>
+        <h2 class="resume-sec-title">Summary</h2>
+        <p class="resume-p">
+          ECE student with a strong foundation in communication systems, signal processing, and RF engineering. Experienced in RF simulation and front-end design using Ansys HFSS, along with embedded systems and programming in C and Python. Interested in analyzing and developing efficient communication systems, with a focus on practical RF applications.
+        </p>
+      </section>
+
+      <!-- Education -->
+      <section>
+        <h2 class="resume-sec-title">Education</h2>
+        
+        <div style="margin-bottom: 12px;">
+          <div class="resume-row">
+            <span class="resume-item-title">B.E Electronics and Communication Engineering</span>
+            <span class="resume-item-date">2023 – Present</span>
+          </div>
+          <div class="resume-row">
+            <span class="resume-item-sub">Kongu Engineering College (CGPA: 8.63/10)</span>
+            <span class="resume-item-sub">Perundurai, Tamil Nadu</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="resume-row">
+            <span class="resume-item-title">HSC (Higher Secondary Certificate)</span>
+            <span class="resume-item-date">2022 – 2023</span>
+          </div>
+          <div class="resume-row">
+            <span class="resume-item-sub">Vivekananda Vidyalaya Matric Hr. Sec. School (Percentage: 89%)</span>
+            <span class="resume-item-sub">Tiruppur, Tamil Nadu</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section>
+        <h2 class="resume-sec-title">Experience</h2>
+
+        <div style="margin-bottom: 16px;">
+          <div class="resume-row">
+            <span class="resume-item-title">Enthu Technology Solutions India Pvt Ltd — PCB Internship</span>
+            <span class="resume-item-date">Feb 2025 – Mar 2025</span>
+          </div>
+          <ul class="resume-bullets">
+            <li>Completed an intensive 1-week internship on PCB Design and Fabrication at Enthu Technology Solutions India Pvt. Ltd., gaining hands-on experience in printed circuit board layout, design principles, schematic routing, and manufacturing processes.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="resume-row">
+            <span class="resume-item-title">National Institute of Technology, Trichy — Embedded Internship</span>
+            <span class="resume-item-date">Jun 2025 – Jul 2025</span>
+          </div>
+          <ul class="resume-bullets">
+            <li>Completed a 2-week internship at NIT Tiruchirappalli in the Department of Electrical and Electronics Engineering. Worked on the project <strong>"Design and Implementation of a Multi-Sensor Environment Monitoring and Object Detection System Using ESP32."</strong></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section>
+        <h2 class="resume-sec-title">Projects</h2>
+
+        <div style="margin-bottom: 16px;">
+          <div class="resume-row">
+            <span class="resume-item-title">Digital Modulation & Demodulation System | MATLAB</span>
+            <span class="resume-item-date">Mar 2026 – Apr 2026</span>
+          </div>
+          <ul class="resume-bullets">
+            <li>Developed and simulated digital communication systems using ASK, PSK, and QAM modulation techniques in MATLAB. Implemented AWGN channel modeling and performed Bit Error Rate (BER) analysis to evaluate system performance under noise. Demonstrated signal reconstruction and comparative analysis of modulation schemes using frequency-domain and statistical methods.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 16px;">
+          <div class="resume-row">
+            <span class="resume-item-title">Microstrip Patch Antenna Design and Analysis using Ansys HFSS</span>
+            <span class="resume-item-date">Dec 2025 – Jan 2026</span>
+          </div>
+          <ul class="resume-bullets">
+            <li>Designed and simulated a microstrip antenna using Ansys HFSS. Analyzed return loss ($S_{11}$), bandwidth, 3D radiation pattern, and antenna gain for optimal performance.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="resume-row">
+            <span class="resume-item-title">Astronomical Signal Processing | MATLAB</span>
+            <span class="resume-item-date">Sep 2024 – Oct 2024</span>
+          </div>
+          <ul class="resume-bullets">
+            <li>Processed and analyzed sonified astronomical data using MATLAB, involving signal acquisition, digital filtering, and frequency-domain analysis. Designed and implemented digital FIR/IIR filters for noise reduction and signal enhancement, incorporating sampling and FFT spectrogram techniques.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Technical Skills -->
+      <section>
+        <h2 class="resume-sec-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skills-label">Languages:</div>
+          <div class="skills-val">Tamil, English, Hindi, German</div>
+
+          <div class="skills-label">Core Areas:</div>
+          <div class="skills-val">Digital Signal Processing (DSP), Communication Systems, RF Front-End Design</div>
+
+          <div class="skills-label">Tools & Technologies:</div>
+          <div class="skills-val">MATLAB, Cadence, EAGLE, Proteus, Ansys (HFSS)</div>
+
+          <div class="skills-label">Programming:</div>
+          <div class="skills-val">C, Python</div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section>
+        <h2 class="resume-sec-title">Certifications</h2>
+        <ul class="resume-bullets" style="margin-bottom: 0;">
+          <li>BA Hindi Degree</li>
+          <li>Cryogenic Temperature Sensor Workshop — Sri Ramakrishna Engineering College</li>
+          <li>Vision Workshop — GCT, Coimbatore</li>
+          <li>Solar Radio & Physics Workshop — Kodaikanal Solar Observatory</li>
+        </ul>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Clean Footer -->
+  <footer class="site-footer">
+    <div class="footer-built-by">Designed & Built by Subhi Senthilkumar</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/subhiksha-senthil-kumar-1a9770356/" target="_blank" rel="noopener noreferrer" class="footer-link">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/Subhiksha-08" target="_blank" rel="noopener noreferrer" class="footer-link">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        <span>GitHub</span>
+      </a>
+      <a href="mailto:subhisenthilkumar73@gmail.com" class="footer-link">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        <span>Email</span>
+      </a>
+    </div>
+    <div class="footer-copyright">© 2026 Subhi Senthilkumar. All Rights Reserved.</div>
+  </footer>
+
+</body>
+</html>
