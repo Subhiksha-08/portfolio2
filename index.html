@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subhiksha S S (Subhi) | ECE & RF Engineer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Subhiksha S S - ECE Student & Engineer specializing in RF Circuit Design, Signal Processing, and Embedded Systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Network Node Canvas Background -->
+  <canvas id="network-canvas"></canvas>
+
+  <!-- Ambient Ambient Radial Mesh -->
+  <div class="ambient-bg"></div>
+
+  <!-- Top Sticky Navigation Header Bar -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">SS</a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+        <svg class="icon" viewBox="0 0 24 24" id="hamburger-icon">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="nav-menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section 1: HOME (Hero) -->
+  <section id="home" class="hero-front">
+    <div class="hero-grid-container reveal">
+      
+      <!-- Left Column: Hero Text Content & Actions -->
+      <div class="hero-content">
+        <!-- Sky-Blue Reference Title -->
+        <h1 class="hero-title-giant">Subhi Senthilkumar</h1>
+
+        <!-- Subtitles -->
+        <div class="hero-sub-primary">Electronics & Communication Engineering Student</div>
+        <div class="hero-sub-secondary">Communications & Networking Enthusiast | RF & DSP Explorer</div>
+
+        <!-- Bio Paragraph with Integrated Educational Qualifications -->
+        <p class="hero-description-para">
+          I am an Electronics and Communication Engineering student at <strong>Kongu Engineering College</strong> (CGPA: <strong>8.63 / 10</strong>) with an HSC score of <strong>89%</strong> (Vivekananda Vidyalaya), based in <strong>Tamil Nadu, India</strong>. I am passionate about communication systems, networking, wireless sensor networks, embedded systems, and intelligent technologies. I enjoy exploring the intersection of electronics, communication, signal processing, and real-world engineering applications.
+        </p>
+
+        <!-- Hero Actions -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Projects</span>
+            <svg class="icon" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <a href="resume.html" class="btn btn-secondary">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <span>View Resume</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/subhiksha-senthil-kumar-1a9770356/" target="_blank"
+            rel="noopener noreferrer" class="btn btn-secondary">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://github.com/Subhiksha-08" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Standing Rectangular Portrait Photo Card -->
+      <div class="hero-portrait-card">
+        <img src="profile.jpg" alt="Subhiksha S S (Subhi)" class="hero-portrait-img" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 2: ABOUT & EDUCATION -->
+  <section id="about" class="section-wrapper reveal">
+    <div class="section-header">
+      <svg class="icon icon-large section-icon" viewBox="0 0 24 24">
+        <path d="M20 21v-2a4 4 0 0 4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+      <h2>About Me & Educational Qualifications</h2>
+    </div>
+
+    <div class="card" style="padding: 32px; margin-bottom: 24px;">
+      <p style="font-size: 15.5px; color: var(--text-secondary); line-height: 1.8;">
+        I am an Electronics and Communication Engineering undergraduate student at <strong>Kongu Engineering
+          College</strong> (CGPA: 8.63/10) with a strong foundation in communication systems, digital signal processing,
+        and RF circuit simulation. Experienced in RF front-end design using <strong>Ansys HFSS</strong> and signal
+        analysis in <strong>MATLAB</strong>, alongside embedded system prototyping using <strong>C</strong>,
+        <strong>Python</strong>, and <strong>ESP32</strong> microcontrollers. Eager to solve real-world hardware and
+        wireless communication challenges.
+      </p>
+    </div>
+
+    <!-- Educational Qualifications Grid -->
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon-box">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <div>
+            <h3>B.E Electronics & Communication Engineering</h3>
+            <div style="font-size: 12px; color: var(--accent-cyan); font-weight: 700;">2023 – Present</div>
+          </div>
+        </div>
+        <p style="font-size: 14px; color: var(--text-primary); font-weight: 600; margin-bottom: 4px;">Kongu Engineering
+          College</p>
+        <p style="font-size: 13px; color: var(--text-secondary);">CGPA: <strong style="color: var(--accent-cyan);">8.63
+            / 10</strong> | Perundurai, Tamil Nadu</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon-box">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3>HSC (Higher Secondary Certificate)</h3>
+            <div style="font-size: 12px; color: var(--accent-cyan); font-weight: 700;">2022 – 2023</div>
+          </div>
+        </div>
+        <p style="font-size: 14px; color: var(--text-primary); font-weight: 600; margin-bottom: 4px;">Vivekananda
+          Vidyalaya Matric Hr. Sec. School</p>
+        <p style="font-size: 13px; color: var(--text-secondary);">Percentage: <strong
+            style="color: var(--accent-cyan);">89%</strong> | Tiruppur, Tamil Nadu</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: SKILLS -->
+  <section id="skills" class="section-wrapper reveal">
+    <div class="section-header">
+      <svg class="icon icon-large section-icon" viewBox="0 0 24 24">
+        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+        <polyline points="2 17 12 22 22 17"></polyline>
+        <polyline points="2 12 12 17 22 12"></polyline>
+      </svg>
+      <h2>Technical Skills & Domains</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-card-icon">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M4.9 19.1C1.9 16.1 1.9 11.3 4.9 8.3"></path>
+              <circle cx="12" cy="12" r="2"></circle>
+              <path d="M19.1 4.9c3 3 3 7.8 0 10.8"></path>
+            </svg>
+          </div>
+          <h3>RF Front-End Design</h3>
+        </div>
+        <p>Microstrip antenna modeling, return loss ($S_{11}$) optimization, radiation pattern analysis in <strong>Ansys
+            HFSS</strong>.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-card-icon">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <h3>Digital Signal Processing</h3>
+        </div>
+        <p>FFT spectral analysis, FIR/IIR digital filter design, ASK/PSK/QAM modulation, and BER channel modeling in
+          <strong>MATLAB</strong>.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-card-icon">
+            <svg class="icon" viewBox="0 0 24 24">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+            </svg>
+          </div>
+          <h3>Embedded Systems & IoT</h3>
+        </div>
+        <p>ESP32 hardware prototyping, multi-sensor interfacing, environmental telemetry, and real-time firmware in
+          <strong>Embedded C</strong>.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-card-icon">
+            <svg class="icon" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <h3>PCB Layout & Fabrication</h3>
+        </div>
+        <p>Schematic capture, double-layer PCB layout routing, Gerber file generation, DRC validation in <strong>EAGLE /
+            Proteus</strong>.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-card-icon">
+            <svg class="icon" viewBox="0 0 24 24">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3>Programming Languages</h3>
+        </div>
+        <p>Proficient in <strong>C</strong>, <strong>Embedded C</strong>, and <strong>Python</strong> for algorithm
+          development and hardware control.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-top">
+          <div class="skill-card-icon">
+            <svg class="icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+            </svg>
+          </div>
+          <h3>Linguistic Abilities</h3>
+        </div>
+        <p>Multilingual communication skills: <strong>English</strong>, <strong>Tamil</strong>, <strong>Hindi (BA
+            Degree)</strong>, and <strong>German</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: PROJECTS -->
+  <section id="projects" class="section-wrapper reveal">
+    <div class="section-header">
+      <svg class="icon icon-large section-icon" viewBox="0 0 24 24">
+        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <h2>Featured Engineering Projects</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-meta">
+            <div class="timeline-title">Digital Modulation & Demodulation System | MATLAB</div>
+            <div class="date-pill">Mar 2026 – Apr 2026</div>
+          </div>
+          <div class="timeline-desc">
+            Simulated digital communication pipelines using ASK, PSK, and QAM modulation techniques in MATLAB. Built
+            AWGN channel modeling and performed Bit Error Rate (BER) analysis under noise to verify signal
+            reconstruction.
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">MATLAB</span>
+            <span class="tech-tag">Digital Modulation</span>
+            <span class="tech-tag">AWGN Modeling</span>
+            <span class="tech-tag">BER Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-meta">
+            <div class="timeline-title">Microstrip Patch Antenna Design & Analysis | Ansys HFSS</div>
+            <div class="date-pill">Dec 2025 – Jan 2026</div>
+          </div>
+          <div class="timeline-desc">
+            Designed and simulated a compact microstrip antenna using 3D electromagnetic field modeling in Ansys HFSS.
+            Analyzed return loss ($S_{11} < -10\text{ dB}$), radiation bandwidth, 3D gain pattern, and impedance
+              matching. </div>
+              <div class="tech-tags">
+                <span class="tech-tag">Ansys HFSS</span>
+                <span class="tech-tag">3D RF Simulation</span>
+                <span class="tech-tag">S11 Analysis</span>
+                <span class="tech-tag">Antenna Gain</span>
+              </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <div class="timeline-title">Astronomical Signal Processing & Filtering | MATLAB</div>
+              <div class="date-pill">Sep 2024 – Oct 2024</div>
+            </div>
+            <div class="timeline-desc">
+              Processed sonified astronomical radio frequency signals in MATLAB. Implemented digital FIR/IIR filters for
+              background noise reduction and performed Fast Fourier Transform (FFT) spectrogram frequency analysis.
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">MATLAB</span>
+              <span class="tech-tag">FFT Spectrogram</span>
+              <span class="tech-tag">FIR/IIR Filtering</span>
+              <span class="tech-tag">Signal Recovery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Section 5: RESEARCH -->
+  <section id="research" class="section-wrapper reveal">
+    <div class="section-header">
+      <svg class="icon icon-large section-icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <h2>Research & Training Initiatives</h2>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon-box">
+            <svg class="icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            </svg>
+          </div>
+          <h3>Solar Radio & Astrophysics Training</h3>
+        </div>
+        <p>Participated in specialized astrophysics and solar radio frequency telemetry training at the renowned
+          <strong>Kodaikanal Solar Observatory</strong>, focusing on radio astronomy receivers and signal noise
+          suppression.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon-box">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <h3>Cryogenic Sensor Workshop</h3>
+        </div>
+        <p>Completed hands-on cryogenic temperature sensor training at <strong>Sri Ramakrishna Engineering
+            College</strong>, analyzing sensor accuracy and calibration under extreme temperature gradients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: EXPERIENCE -->
+  <section id="experience" class="section-wrapper reveal">
+    <div class="section-header">
+      <svg class="icon icon-large section-icon" viewBox="0 0 24 24">
+        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+      </svg>
+      <h2>Practical Internship Experience</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-meta">
+            <div class="timeline-title">Embedded Systems Intern — National Institute of Technology (NIT), Trichy</div>
+            <div class="date-pill">Jun 2025 – Jul 2025</div>
+          </div>
+          <div class="timeline-desc">
+            Engineered a "Multi-Sensor Environment Monitoring and Object Detection System Using ESP32" in the EEE
+            Department. Programmed sensor telemetry, real-time threshold alerts, and ESP32 hardware response.
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">ESP32</span>
+            <span class="tech-tag">Embedded C</span>
+            <span class="tech-tag">Sensor Interfacing</span>
+            <span class="tech-tag">NIT Trichy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-meta">
+            <div class="timeline-title">PCB Design & Fabrication Intern — Enthu Technology Solutions</div>
+            <div class="date-pill">Feb 2025 – Mar 2025</div>
+          </div>
+          <div class="timeline-desc">
+            Completed hands-on internship in printed circuit board schematic routing, component footprint creation,
+            Gerber file generation, DRC validation, and physical PCB etching and fabrication.
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">PCB Layout</span>
+            <span class="tech-tag">Schematic Design</span>
+            <span class="tech-tag">Gerber Verification</span>
+            <span class="tech-tag">Fabrication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: RESUME -->
+  <section id="resume" class="section-wrapper reveal">
+    <div class="section-header">
+      <svg class="icon icon-large section-icon" viewBox="0 0 24 24">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="16" y1="13" x2="8" y2="13"></line>
+        <line x1="16" y1="17" x2="8" y2="17"></line>
+      </svg>
+      <h2>Official Resume Document</h2>
+    </div>
+
+    <div class="card"
+      style="padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+      <div>
+        <h3 style="font-size: 18px; margin-bottom: 6px;">Subhiksha S S — Formal Curriculum Vitae</h3>
+        <p style="font-size: 14px; color: var(--text-secondary);">Complete formal resume including education,
+          internships, simulation projects, skills matrix, and print/PDF export features.</p>
+      </div>
+      <a href="resume.html" class="btn btn-primary" style="white-space: nowrap;">
+        <span>Open Printable Resume</span>
+        <svg class="icon" viewBox="0 0 24 24">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section 8: CONTACT -->
+  <section id="contact" class="section-wrapper reveal">
+    <div class="section-header">
+      <svg class="icon icon-large section-icon" viewBox="0 0 24 24">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+      <h2>Contact Me</h2>
+    </div>
+
+    <p style="text-align: center; color: var(--text-secondary); max-width: 640px; margin: -10px auto 36px; font-size: 15px; line-height: 1.6;">
+      Feel free to reach out directly via email or phone for inquiries, project collaborations, or engineering opportunities.
+    </p>
+
+    <!-- Direct Contact Cards Grid -->
+    <div class="cards-grid" style="max-width: 880px; margin: 0 auto;">
+      <a href="mailto:subhisenthilkumar73@gmail.com" class="card" style="text-decoration: none; padding: 28px; display: flex; align-items: center; gap: 20px;">
+        <div class="card-icon-box" style="width: 54px; height: 54px; background: rgba(56, 189, 248, 0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg class="icon" style="width: 26px; height: 26px; color: var(--accent-cyan);" viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
+        <div>
+          <div style="font-size: 12px; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px;">Email Address</div>
+          <div style="font-size: 16px; color: var(--text-primary); font-weight: 700; word-break: break-all;">subhisenthilkumar73@gmail.com</div>
+        </div>
+      </a>
+
+      <a href="tel:+916380797851" class="card" style="text-decoration: none; padding: 28px; display: flex; align-items: center; gap: 20px;">
+        <div class="card-icon-box" style="width: 54px; height: 54px; background: rgba(56, 189, 248, 0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg class="icon" style="width: 26px; height: 26px; color: var(--accent-cyan);" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div>
+          <div style="font-size: 12px; color: var(--accent-cyan); font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px;">Phone Number</div>
+          <div style="font-size: 16px; color: var(--text-primary); font-weight: 700;">+91 6380797851</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Clean Footer -->
+  <footer class="site-footer">
+    <div class="footer-built-by">Designed & Built by Subhi Senthilkumar</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/subhiksha-senthil-kumar-1a9770356/" target="_blank" rel="noopener noreferrer"
+        class="footer-link">
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/Subhiksha-08" target="_blank" rel="noopener noreferrer" class="footer-link">
+        <svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+          </path>
+        </svg>
+        <span>GitHub</span>
+      </a>
+      <a href="mailto:subhisenthilkumar73@gmail.com" class="footer-link">
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span>Email</span>
+      </a>
+    </div>
+    <div class="footer-copyright">© 2026 Subhi Senthilkumar. All Rights Reserved.</div>
+  </footer>
+
+  <!-- Scripts for Animations & Interactivity -->
+  <script>
+    // 1. Mobile Hamburger Toggle
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+      });
+    });
+
+    // 2. Scroll Reveal Observer
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // 3. Active Nav Highlighting on Scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let currentSectionId = 'home';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.scrollY >= sectionTop) {
+          currentSectionId = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // 4. Subtle Network Node Movement Background Canvas
+    const canvas = document.getElementById('network-canvas');
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    // Create Nodes
+    const numNodes = Math.min(40, Math.floor(window.innerWidth / 30));
+    const nodes = [];
+
+    for (let i = 0; i < numNodes; i++) {
+      nodes.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        radius: Math.random() * 2 + 1
+      });
+    }
+
+    function animateNodes() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw lines
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const dx = nodes[i].x - nodes[j].x;
+          const dy = nodes[i].y - nodes[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < 140) {
+            ctx.beginPath();
+            ctx.moveTo(nodes[i].x, nodes[i].y);
+            ctx.lineTo(nodes[j].x, nodes[j].y);
+            ctx.strokeStyle = `rgba(56, 189, 248, ${0.15 * (1 - dist / 140)})`;
+            ctx.lineWidth = 0.8;
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Move & draw nodes
+      nodes.forEach(node => {
+        node.x += node.vx;
+        node.y += node.vy;
+
+        if (node.x < 0 || node.x > canvas.width) node.vx *= -1;
+        if (node.y < 0 || node.y > canvas.height) node.vy *= -1;
+
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(56, 189, 248, 0.4)';
+        ctx.fill();
+      });
+
+      requestAnimationFrame(animateNodes);
+    }
+    animateNodes();
+  </script>
+</body>
+
+</html>
